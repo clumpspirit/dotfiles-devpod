@@ -10,11 +10,11 @@ alias repos='cd /Repos/'
 alias hl='cd /Repos/github.com/clumpspirit/homelab'
 
 # Start Hyprland after logging into tty
-if [ -z "$TMUX" ] && [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ]; then
-  if uwsm check may-start; then
-    exec uwsm start hyprland.desktop
-  fi
-fi
+#if [ -z "$TMUX" ] && [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ]; then
+#  if uwsm check may-start; then
+#    exec uwsm start hyprland.desktop
+#  fi
+#fi
 
 # Completions
 fpath+=~/.zfunc

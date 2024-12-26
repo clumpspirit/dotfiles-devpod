@@ -6,6 +6,7 @@ ln -sf "$PWD/.zshrc" "$HOME"/.zshrc
 
 # Install packages within container
 packages=(
+  vim
   kubectl
   fluxcd/tap/flux
   direnv
