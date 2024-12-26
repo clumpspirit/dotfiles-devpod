@@ -23,3 +23,6 @@ autoload -Uz compinit
 compinit -u
 
 zstyle ':completion:*' menu select
+
+# Sourcing for direnv
+eval "$(direnv hook zsh)"
