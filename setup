@@ -1,0 +1,22 @@
+# Create symlinks for configs in repo
+ln -sf "PWD/.vimrc" "HOME"/.vimrc
+ln -sf "PWD/.zshrc" "HOME"/.zshrc
+
+# Install packages within container
+packages=(
+  kubectl
+  fluxcd/tap/flux
+  direnv
+  k9s
+  pure
+)
+
+# Loop through array above and install each package
+for package in "${packages[@]}"; do
+  echo "Installing $package..."
+  /home/linuxbrew/.linuxbrew/bin/brew install "$package"
+done
+
+echo "All packages successfully installed."
+
+echo "Setup complete."
