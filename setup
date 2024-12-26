@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Create symlinks for configs in repo
-ln -sf "PWD/.vimrc" "HOME"/.vimrc
-ln -sf "PWD/.zshrc" "HOME"/.zshrc
+ln -sf "$PWD/.vimrc" "$HOME"/.vimrc
+ln -sf "$PWD/.zshrc" "$HOME"/.zshrc
 
 # Install packages within container
 packages=(
