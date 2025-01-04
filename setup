@@ -12,6 +12,7 @@ packages=(
   direnv
   k9s
   pure
+  sops
 )
 
 # Loop through array above and install each package
