@@ -7,7 +7,7 @@ prompt pure
 
 # Aliases
 alias v=nvim
-alias hl='cd ~/workspaces/homelab'
+alias hl='cd /workspaces/homelab'
 
 # Start Hyprland after logging into tty
 #if [ -z "$TMUX" ] && [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ]; then
